@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --background: 240 10% 98%;
+        /* Light Mode: Zinc 50 */
+        --surface: 240 5% 96%;
+        /* Light Mode: Zinc 100 */
+        --foreground: 240 10% 3.9%;
+
+        --primary: 153 60% 53%;
+        /* Emerald 500 */
+        --primary-foreground: 0 0% 98%;
+    }
+
+    .dark {
+        --background: 226 25% 5%;
+        /* Very deep blue-black #060810 */
+        --surface: 226 20% 8%;
+        /* Slightly lighter #10121b */
+        --foreground: 210 40% 98%;
+    }
+
+    body {
+        @apply bg-background text-foreground transition-colors duration-300;
+    }
+}
+
+/* Mapping Tailwind colors to CSS variables */
+@layer utilities {
+    .bg-background {
+        background-color: hsl(var(--background));
+    }
+
+    .bg-surface\/50 {
+        background-color: hsl(var(--surface) / 0.5);
+    }
+
+    .text-white {
+        color: hsl(var(--foreground));
+    }
+}
