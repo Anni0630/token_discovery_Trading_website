@@ -96,5 +96,55 @@ export const MOCK_TOKENS: Token[] = [
         change: 2.1,
         volume: 980000000,
         type: "migrated"
+    },
+    // New Pairs
+    {
+        symbol: "NEO",
+        name: "Neo Token",
+        price: 0.00045,
+        change: 15.2,
+        volume: 125000,
+        type: "new"
+    },
+    {
+        symbol: "FROGE",
+        name: "Froge",
+        price: 0.0000012,
+        change: -3.5,
+        volume: 85000,
+        type: "new"
+    },
+    {
+        symbol: "MOON",
+        name: "MoonShot",
+        price: 0.0023,
+        change: 45.8,
+        volume: 450000,
+        type: "new"
+    },
+    // Final Stretch
+    {
+        symbol: "GLOW",
+        name: "Glow Token",
+        price: 0.012,
+        change: 2.4,
+        volume: 2500000,
+        type: "final"
+    },
+    {
+        symbol: "SPARK",
+        name: "Spark Protocol",
+        price: 0.45,
+        change: 8.9,
+        volume: 1800000,
+        type: "final"
+    },
+    {
+        symbol: "ZEN",
+        name: "Zenith",
+        price: 1.25,
+        change: -1.2,
+        volume: 3200000,
+        type: "final"
     }
 ];
