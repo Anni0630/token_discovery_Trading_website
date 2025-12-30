@@ -274,7 +274,7 @@ export default function Home() {
                                         <tr><td colSpan={9} className="p-12 text-center text-gray-500">No tokens found matching your search.</td></tr>
                                     ) : (
                                         filteredAndSortedTokens.map((token) => (
-                                            <TokenRow key={token.symbol} token={token} />
+                                            <TokenRow key={token.symbol} token={token} timeRange={timeRange} />
                                         ))
                                     )}
                                 </tbody>
